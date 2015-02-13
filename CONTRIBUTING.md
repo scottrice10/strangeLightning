@@ -11,11 +11,11 @@
 4. Checkout the master branch, if not there already
 
 5. Rebase 
-  git pull --rebase upstream master
+    `git pull --rebase upstream master`
 
 
 6  Creates your branch and brings you there
-   git checkout -b `feature_branch`
+   `git checkout -b feature_branch_you_are_building`
 
 7. Add and commit to your feature branch. (don't push)
 
@@ -41,7 +41,7 @@
 
    `$ git pull --rebase upstream master`
 
-   _If there is a merge conflict, resolve the conflicts and proceed. Squash all outstanding commits into one using --rebase -i._
+   _If there is a merge conflict, resolve the conflicts and proceed_ Squash all outstanding commits into one using --rebase -i._
 
    `$git rebase --continue`
    
@@ -75,11 +75,11 @@
       `$ git pull --rebase upstream master` 
 
       _if pull requests have been accepted to development while yours
-      was pending, please repeat step 5 to sync your fork with fire-devil developent branch_
+      was pending, please repeat step 6 to sync your fork with strangeLightning developent branch_
 
       To start working on next feature
 
-9. Go to step 4.
+9. Go to step 5.
 
       #References
 

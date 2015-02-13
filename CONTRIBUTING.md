@@ -2,23 +2,22 @@
 
 1. Fork the repo.
 
-1. Clone to local computer.
+2. Clone to local computer.
 
-1. Add upstream remote
+3. Add upstream remote
 
    `$ git remote add upstream https://github.com/StrangeLightning/strangeLightning.git`
 
-1. Checkout the dev branch, if not there already
+4. Checkout the master branch, if not there already
 
-   These commands will help you do this:
+5. Rebase 
+  git pull --rebase upstream master
 
-   ``` bash
 
-   # Creates your branch and brings you there
-   git checkout -b `dev`
-   ```
+6  Creates your branch and brings you there
+   git checkout -b `feature_branch`
 
-1. Add and commit to your feature branch. (don't push)
+7. Add and commit to your feature branch. (don't push)
 
    Prefix each commit with the issue number
     - (#2) Added a new feature
@@ -38,7 +37,7 @@
     be a blank line and then a more detailed description of the commit. This can be
     as detailed as you want, so dig into details here and keep the first line short.
 
-1. Add upstream commits to feature branch (make sure you are on feature branch).
+6. Add upstream commits to feature branch (make sure you are on feature branch).
 
    `$ git pull --rebase upstream master`
 
@@ -50,9 +49,9 @@
 
    _After merge conflicts resolves/no conflicts originally._
 
-   `$git push origin dev`
+   `$git push origin feature_branch_you_worked_on`
 
-1. Github Submission
+8. Github Submission
 
       Go to GitHub and send pull request to the fire-devil organization branch.
 
@@ -71,16 +70,16 @@
 
       Thanks for contributing!
 
-1. Update your local master.
-
-      `$ git pull upstream master`
+9. Update your local master.
+      `$ git checkout master`
+      `$ git pull --rebase upstream master` 
 
       _if pull requests have been accepted to development while yours
       was pending, please repeat step 5 to sync your fork with fire-devil developent branch_
 
       To start working on next feature
 
-1. Go to step 4.
+9. Go to step 4.
 
       #References
 
